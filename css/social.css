@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	MEDICOM
+Version:	2.0
+Primary use:	MEDICAL THEME
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1. body
+2. common Classes
+2. header
+3. navigation / .navbar
+4. sections
+-------------------------------------------------------------------*/
+
+/* .... SOCIAL COLORFULL .... */
+.social3 {
+	padding:0px 0;
+	margin:0;
+}
+.social3 li {
+	display:inline-block;
+	text-align:center;
+}
+.social3 li a i {
+	border:1px solid #E6E6E6;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:50%;
+	margin:0 1.5px 6px;
+	display:block;
+	width:31px;
+	height:31px;
+	font-size:17px;
+	color:#929292;
+	line-height:29px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.social3 li a i:hover {
+	color:#fff;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.social3 li a i.fa-facebook:hover {
+	background:#3b5998;
+	border-color:#ffffff;
+}
+.social3 li a i.fa-twitter:hover {
+	background:#1da1f2;
+	border-color:#ffffff;
+}
+.social3 li a i.fa-google-plus:hover {
+	background:#d3482d;
+	border-color:#ffffff;
+}
+.social3 li a i.fa-dribbble:hover {
+	background:#da2984;
+	border-color:#b71568;
+}
+.social3 li a i.fa-youtube:hover {
+	background:#c4302b;
+	border-color:#ffffff;
+}
+.social3 li a i.fa-vimeo-square:hover {
+	background:#03a9ee;
+	border-color:#0c79a6;
+}
+.social3 li a i.fa-linkedin:hover {
+	background:#016793;
+	border-color:#00475c;
+}
+.social3 li a i.fa-rss:hover {
+	background:#f47c23;
+	border-color:#d26514;
+}
+.social3 li a i.fa-pinterest:hover {
+	background:#ca1f28;
+	border-color:#b71c23;
+}
+.social3 li a i.fa-android:hover {
+	background:#a4ca39;
+	border-color:#89ac28;
+}
+.social3 li a i.fa-flickr:hover {
+	background:#fe0082;
+	border-color:#d90472;
+}
+.social3 li a i.fa-skype:hover {
+	background:#00ADEF;
+	border-color:#00ADEF;
+}
+.social3 li a i.fa-instagram:hover {
+	background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+	border-color:#ffffff;
+}
+
+/*------------------------------------------------------------------
+
+FOOTER ( light / dark )
+
+-------------------------------------------------------------------*/
+
+footer {
+	padding:10px 0 5px;
+	line-height:20px;
+}
+footer h4 {
+	font-weight: 700;
+	margin-bottom:30px;
+}
+footer h4 span {
+	padding-bottom:7px;
+	display:inline-block;
+	margin-bottom: -1px;
+}
+.footer-nav li {
+	float:left;
+	width:50%;
+	line-height:38px;
+}
+.footer-nav li a {
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.footer-nav li a:hover {
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.footer-nav li a i {
+	font-size:10px;
+	margin:0px 0px 0 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+footer.light {
+	background:#343a40;
+	color:#f7941e
+}
+footer.light h4 {
+	border-bottom:1px solid #ebebeb;
+}
+footer.light .footer-nav li a {
+	color:#6c6c6c;
+}
+footer.light .newsletter i {
+	color:#393939;
+}
+footer.light .contact-widget i {
+	color:#616161;
+}
+footer.light .contact-widget p a {
+	color:#616161;
+}
+footer.light .newsletter input[type="text"], footer.light .newsletter input[type="email"] {
+	background:#fff
+}
+footer.light .copyright {
+	background:#f5f5f5;
+	border-bottom:1px solid #e6e6e6;
+	color:#646464;
+	margin:30px 0;
+	font-size: 12px;
+	padding:10px 0 8px;
+}
+footer.light .footer-bottom-text {
+	color:#6c6c6c;
+	font-size: 12.5px;
+	padding-top:10px;
+}
+footer.dark {
+	background:#313131;
+	color:#c4c4c4
+}
+footer.dark h4 {
+	border-bottom:1px solid #747474;
+}
+footer.dark .footer-nav li a {
+	color:#c4c4c4;
+}
+footer.dark .newsletter i {
+	color:#c4c4c4;
+}
+footer.dark .tweet i {
+	color:#909090;
+}
+footer.dark .contact-widget i {
+	color:#c4c4c4;
+}
+footer.dark .contact-widget p a {
+	color:#c4c4c4;
+}
+footer.dark .newsletter input[type="text"], footer.dark .newsletter input[type="email"] {
+	background:#292929;
+	border-color:#565656
+}
+footer.dark .social3 li a i{ border-color:#747474}
+
+/* .... COPYRIGHT DARK .... */
+
+footer.dark .copyright {
+	background:#222222;
+	border-bottom:1px solid #000;
+	color:#8d8d8d;
+	margin:30px 0;
+	font-size: 12px;
+	padding:10px 0;
+}
+footer.dark .footer-bottom-text {
+	color:#757575;
+	font-size: 12.5px;
+	padding-top:10px;}
+}
+.footer-widget p {
+	margin-bottom:10px;
+}
+
+/* .... FOOTER NEWSLETTER .... */
+
+-------------------------------------------------------------------*/
+<style>
+p
+   {
+		  font-family:'Avenir LT W01 45 Book';
+	    color: #000000;
+	 }
+header
+   {
+	   font-family:"Josefin Sans";
+	   color: #000000;
+		 font-size: 50px;
+	   font-style: normal;
+	   font-variant: normal;
+	   font-weight: 600;
+	   line-height: 50px;
+	 }
+
+body
+   {
+		 font-family:"Avenir black";
+	    color: #000000;
+
+	 }
+h1{color: #000000;}
+h2{color: #000000;}
+h3
+   {
+		  font-family:'Avenir LT W01 45 Book';
+	    color: #000000;
+	 }
+h4{color: #000000;}
+h5{color: #000000;}
+h6{color: #000000;}
+table{color: #000000;}
+strong{color: #000000;}
+a{color: #000000}
+</style>
+
+
+-----------------------------------------------------------------------------*/
+
+/*Barras */
+/*button*/--------------------------------------------------------------------*/
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 50px;}
+.button5 {border-radius: 50%;}
+}
+/*-- Maps -------------- --*/
+.map {
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	overflow:hidden;
+	height:465px;
+}
+.map iframe {
+	border:0;
+	margin:0;
+	width:100%;
+	height:100%;
+}
+.get-directions {
+	text-align:center;
+	padding:35px 0 45px;
+}
+.get-directions input[type="text"] {
+	height:61px
+}
+.get-directions input[type="text"], .get-directions input[type="submit"] {
+	display:inline-block;
+	float:none;
+}
+.get-directions input[type="text"] {
+	padding:14px 3%;
+	width:86%;
+	max-width:556px;
+	font-size:22px;
+	color:#ababab;
+	font-weight: 300;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+}
+.get-directions input[type="submit"] {
+	background:url(../imagen/directions-btn.jpg) no-repeat;
+	width:60px;
+	height:61px;
+	padding:0;
+	margin:0;
+	border:0;
+	min-width:0;
+	position:relative;
+	top:-6px;
+}
+.get-in-touch-widget, .we-are-social {
+	padding-bottom: 10px;
+}
+.get-in-touch-widget li, .we-are-social li {
+	font-size:14px;
+	padding:0 0 10px 45px;
+}
+.get-in-touch-widget li a, .we-are-social li a {
+	color:#646464;
+}
+.get-in-touch-widget li i, .we-are-social li i {
+	color:#606060;
+	margin-left:-45px;
+	font-size:16px;
+	width:18px;
+	text-align:center;
+	float:left;
+}
+.get-in-touch-widget li i.fa-phone, .we-are-social li i.fa-phone {
+	font-size:18px;
+}
+.get-in-touch-widget li i.fa-globe, .we-are-social li i.fa-globe {
+	font-size:20px;
+}
+.get-in-touch-widget li i.fa-clock-o, .we-are-social li i.fa-clock-o {
+	font-size:20px;
+}
+.get-in-touch-widget li i.fa-map-marker, .we-are-social li i.fa-map-marker {
+	font-size:21px;
+}
+.get-in-touch-widget.boxed li, .we-are-social.boxed li {
+	padding-bottom:7px;
+	line-height: 30px;
+}
+.get-in-touch-widget.boxed li i, .we-are-social.boxed li i {
+	border:1px solid #bbbbbb;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	width:26px;
+	height:26px;
+	line-height:25px;
+	font-size:16px;
+}
+.get-in-touch-widget.boxed li i.fa-envelope, .we-are-social.boxed li i.fa-envelope {
+	font-size:14px;
+}
+.contact-form2 input[type="text"], .contact-form2 input[type="email"] {
+	width:32.4%;
+}
+.contact-form2 input.last {
+	margin-right:0;
+}
+.contact-form2 textarea {
+
+	BACK TO TOP
+
+-------------------------------------------------------------------*/
+.back-to-top {
+    border-radius: 5px;
+    bottom: 20px;
+    color: #fff;
+    display: block;
+    font-size: 40px;
+    height: 58px;
+    position: fixed;
+    right: -200px;
+    text-align: center;
+    transition: all 800ms ease 0s;
+    visibility: hidden;
+    width: 60px;
+	line-height: 50px;
+    z-index: 500;
+}
+.back-to-top:focus, .back-to-top:hover {
+    color: #fff;
+    transition: all 800ms ease 0s;
+}
+.back-to-top.to-top {
+    left: 20px;
+    transition: all 800ms ease 0s;
+    visibility: visible;
+}
+	
+.accordian-style2 .panel-heading i.fa-angle-down, .accordian-style2 .panel-heading i.fa-angle-up {
+	font-size:20px;
+	padding:5px 0 0 0;
+
+</style>
